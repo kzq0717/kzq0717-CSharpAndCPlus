@@ -1,0 +1,10 @@
+namespace rt_CPlusToCSharp
+{
+    [default_interface]
+    runtimeclass Test
+    {
+        Test();
+        Int32 MyProperty;
+        event Windows.Foundation.EventHandler<Int32> TestEvent;//定义事件
+    }
+}

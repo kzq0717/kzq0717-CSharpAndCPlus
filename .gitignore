@@ -1,0 +1,57 @@
+*.obj
+*.pdb
+*.pch
+*.tlog
+*.log
+*.db
+*.dll
+*.exe
+*.winmd
+.vs/
+App1/Generated Files
+App1/x64
+App2_CSharp/bin
+App2_CSharp/obj
+ARM/
+packages/
+rt_CPlusToCSharp/ARM/
+rt_CPlusToCSharp/Generatored Files
+
+
+
+
+.packages/
+.ARM/
+.App1/Generated Files/
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app

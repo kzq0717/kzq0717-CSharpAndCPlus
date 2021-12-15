@@ -14,6 +14,12 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rt_CPlusToCSharp", "rt_CPlu
 		{490631EA-8A6A-444F-B70F-BDEEC5FF0847} = {490631EA-8A6A-444F-B70F-BDEEC5FF0847}
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{701E3300-7544-4560-AED4-5B5D2F7EDD9D}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM = Debug|ARM
@@ -76,13 +82,14 @@ Global
 		{27894894-30E4-4E15-98AD-E865BFB5BC60}.Release|x86.Deploy.0 = Release|x86
 		{490631EA-8A6A-444F-B70F-BDEEC5FF0847}.Debug|ARM.ActiveCfg = Debug|ARM
 		{490631EA-8A6A-444F-B70F-BDEEC5FF0847}.Debug|ARM.Build.0 = Debug|ARM
-		{490631EA-8A6A-444F-B70F-BDEEC5FF0847}.Debug|ARM64.ActiveCfg = Debug|Win32
+		{490631EA-8A6A-444F-B70F-BDEEC5FF0847}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{490631EA-8A6A-444F-B70F-BDEEC5FF0847}.Debug|ARM64.Build.0 = Debug|ARM64
 		{490631EA-8A6A-444F-B70F-BDEEC5FF0847}.Debug|x64.ActiveCfg = Debug|x64
 		{490631EA-8A6A-444F-B70F-BDEEC5FF0847}.Debug|x64.Build.0 = Debug|x64
 		{490631EA-8A6A-444F-B70F-BDEEC5FF0847}.Debug|x86.ActiveCfg = Debug|ARM
 		{490631EA-8A6A-444F-B70F-BDEEC5FF0847}.Debug|x86.Build.0 = Debug|ARM
 		{490631EA-8A6A-444F-B70F-BDEEC5FF0847}.Release|ARM.ActiveCfg = Release|Win32
-		{490631EA-8A6A-444F-B70F-BDEEC5FF0847}.Release|ARM64.ActiveCfg = Release|Win32
+		{490631EA-8A6A-444F-B70F-BDEEC5FF0847}.Release|ARM64.ActiveCfg = Release|ARM64
 		{490631EA-8A6A-444F-B70F-BDEEC5FF0847}.Release|x64.ActiveCfg = Release|x64
 		{490631EA-8A6A-444F-B70F-BDEEC5FF0847}.Release|x64.Build.0 = Release|x64
 		{490631EA-8A6A-444F-B70F-BDEEC5FF0847}.Release|x86.ActiveCfg = Release|Win32

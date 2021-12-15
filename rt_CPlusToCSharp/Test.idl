@@ -1,10 +1,63 @@
-namespace rt_CPlusToCSharp
-{
-    [default_interface]
-    runtimeclass Test
+namespace rt_CPlusToCSharp{
+    struct Params {
+        Int32 para1;
+        String para2;
+    };
+
+    struct Error {
+        Int32 errorCode;
+        String message;
+    };
+
+    struct Feature {
+        String Provider;
+        Int32 time;
+    };
+
+    delegate void InitializedDelegate(Error error, Params args);
+    delegate void RecognitionHandler(Boolean arg); // delegate type for event
+    delegate Int32 RecognitionHandlerEx(Int32 a, Int32 b);
+
+    [default_interface] runtimeclass Test : Windows.UI.Xaml.Data.INotifyPropertyChanged // Interface
     {
-        Test();
-        Int32 MyProperty;
-        event Windows.Foundation.EventHandler<Int32> TestEvent;//定义事件
+        Test(); // Constructor
+        Test(Windows.Storage.StorageFile file);
+        Test(String para1, String para2);
+        Int32 MyProperty {
+            get;
+            set;
+        };
+        Single SepiaIntensity {
+            get;
+        };
+
+        Windows.Foundation.IAsyncAction StartRecognitionAsync(); // Async Method
+
+        event RecognitionHandler ImageRecognized; // event
+        event RecognitionHandlerEx ImageRecognizedEx; // event
+        event Windows.Foundation.EventHandler<Int32> OnShow; //定义事件
+        event InitializedDelegate OnInitialized;
+        Int32 Add(Int32 a, Int32 b);
     }
-}
+
+        //[version(1.0), uuid(da38922c-3d3a-404f-8477-de9c104c4f34)]
+        // delegate HRESULT CustomDelegate([in] int value);
+        //
+        //[version(1.0),uuid(6ac35d2c-b2cf-4c36-995c-a9c0764636c9),exclusiveto(Events)]
+        // interface IEvents :IInspectable {
+        //    [eventadd] HRESULT CustomEvent([in] CustomDelegate* handler,[out][retval] EventRegistrationToken* cookie);
+        //    [eventremove] HRESULT CustomEvent([in] EventRegistrationToken cookie);
+        //};
+
+        //[version(1.0), activatable(1.0), static(IEventsStatics, 1.0)]
+        // runtimeclass Events
+        //{
+        //    [default] interface IEvents;
+        //};
+
+        //[version(1),uuid(e21df825 - 937d - 4b0b - 862e-e411b57e280e)]
+        // interface IHen : IInspectable {
+        //    HRESULT Cluck();
+        //}
+
+} // namespace rt_CPlusToCSharp

@@ -21,3 +21,5 @@ Steps:
 Learn more about C++/WinRT here:
 http://aka.ms/cppwinrt/
 ========================================================================
+1. namespace rt_CPlusToCSharp
+2.

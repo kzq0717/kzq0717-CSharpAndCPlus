@@ -55,3 +55,9 @@ rt_CPlusToCSharp/Generatored Files
 *.exe
 *.out
 *.app
+/ARM64/Debug/rt_CPlusToCSharp
+/CPlusDLL/ARM64
+/CPlusDLL/Debug
+/CPlusDLL/Release
+/rt_CPlusToCSharp/ARM64/Debug
+/x64/Debug/CPlusDLL
